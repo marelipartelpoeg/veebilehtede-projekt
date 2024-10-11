@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Kavoon&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+.text-justify-custom {
+    font-size: 15px;
+    color: #264E3A;
+    text-align: justify;
+}
+
+h5 {
+    font-family: Nunito, serif;
+    font-weight: 750;
+    font-size: 17px;
+    color: #264E3A;
+}
+
+.bi-arrow-right-short {
+    font-size: 26px;
+    color: #264E3A;
+}
+
+hr {
+    height: 1px;
+    background-color: #000;
+    border: 1px solid #264E3A;
+    opacity: 0.6;
+}

@@ -62,9 +62,9 @@
                         <div class="col-6 mb-3">
                             <label for="yearFilter" class="form-label">Aastad</label>
                             <div class="d-flex align-items-center">
-                                <input  style="border-color: #264E3A;" type="text" class="form-control me-2" id="yearStart" placeholder="" maxlength="4" pattern="\d{4}">
+                                <input style="border-color: #264E3A;" type="text" class="form-control me-2" id="yearStart" placeholder="" maxlength="4" pattern="\d{4}">
                                 <p style="color:#264E3A;" class="mb-0 mx-2">-</p>
-                                <input  style="border-color: #264E3A;" type="text" class="form-control" id="yearEnd" placeholder="" maxlength="4" pattern="\d{4}">
+                                <input style="border-color: #264E3A;" type="text" class="form-control" id="yearEnd" placeholder="" maxlength="4" pattern="\d{4}">
                             </div>
                         </div>
                     </div>
@@ -201,7 +201,16 @@
         const allItems = document.querySelectorAll('.pagination .page-item');
         allItems.forEach(item => item.classList.remove('active'));
         element.parentElement.classList.add('active');
-        console.log("User clicked on page " + page);
+    }
+    document.getElementById('categoryFilter').addEventListener('keydown', detectEnterKey);
+    document.getElementById('yearStart').addEventListener('keydown', detectEnterKey);
+    document.getElementById('yearEnd').addEventListener('keydown', detectEnterKey);
+
+    function detectEnterKey(event) {
+        if (event.key === 'Enter') {
+            event.preventDefault(); 
+            window.location.reload(); 
+        }
     }
     </script>
 </body>

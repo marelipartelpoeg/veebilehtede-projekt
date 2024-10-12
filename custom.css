@@ -89,3 +89,19 @@ p {
     background-color: #B9F6E2; 
     border-color: #264E3A;
 }
+.nupp {
+    font-family: Kavoon, serif; 
+    font-size: 22px; 
+    color: #3A8794; 
+    background-color: #5CFFA8; 
+    border: 2px solid  #3A8794; 
+    border-radius: 3px; 
+    height: 40px; 
+    width: 42%;
+    text-decoration: none;
+
+}
+
+a {
+    text-decoration: none;
+}

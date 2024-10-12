@@ -24,3 +24,48 @@ hr {
     border: 1px solid #264E3A;
     opacity: 0.6;
 }
+
+p {
+    font-family: Nunito, serif; 
+    font-weight: 450; 
+    font-size: 17px; 
+    color: #264E3A"
+}
+
+.form-label {
+    font-family: Nunito, serif;
+    font-weight: 450;
+    font-size: 17px;
+    color: #264E3A;
+}
+
+.pagination .page-link {
+    color: #264E3A; 
+    border: none;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #B9F6E2; 
+    color: #264E3A; 
+    border-radius: 5px;
+}
+
+.pagination .page-item .page-link {
+    padding: 0.5rem 0.75rem;
+    margin: 0 0.25rem;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: #FFFFFF; 
+    border-bottom: 2px solid #264E3A; 
+}
+
+.pagination .page-item.disabled .page-link {
+    background-color: #F6FFFD; 
+}
+
+.pagination .page-item:hover .page-link {
+    background-color: #B9F6E2; 
+    border-color: #264E3A;
+}

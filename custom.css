@@ -24,3 +24,22 @@ hr {
     border: 1px solid #264E3A;
     opacity: 0.6;
 }
+
+h3 {
+    font-family: Nunito, serif;
+    font-weight: 750;
+    font-size: 13px;
+    color: #67b9bf;
+}
+h2 {
+    font-family: Nunito, serif;
+    font-weight: 750;
+    font-size: 15px;
+    color: #284b4d;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }

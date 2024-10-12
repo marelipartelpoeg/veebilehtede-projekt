@@ -74,11 +74,11 @@ p {
 
 .pagination .page-item .page-link {
     padding: 0.5rem 0.75rem;
-    margin: 0 0.25rem;
     font-size: 16px;
     border-radius: 5px;
     background-color: #FFFFFF; 
     border-bottom: 2px solid #264E3A; 
+    margin: 0.5rem;
 }
 
 .pagination .page-item.disabled .page-link {

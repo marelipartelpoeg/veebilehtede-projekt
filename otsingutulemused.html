@@ -44,7 +44,7 @@
     <div class="container px-4">
         <div class="container px-0 pb-4">
             <div class="d-flex flex-start align-items-center">
-                <h5 class="mb-0">Lisafiltrid</h5>
+                <h5 class="mb-1">Lisafiltrid</h5>
             </div>
             <hr class="mt-0" />
             <div class="filter">
@@ -52,7 +52,7 @@
                     <div class="row">
                         <div class="col-6 mb-3">
                             <label for="categoryFilter" class="form-label">Kategooria</label>
-                            <select style="color: gray;" class="form-select" id="categoryFilter">
+                            <select style="color: gray; border-color: #264E3A;" class="form-select" id="categoryFilter">
                                 <option value="">Vali kategooria</option>
                                 <option value="fantasy">Fantaasia</option>
                                 <option value="romance">Romaan</option>
@@ -62,9 +62,9 @@
                         <div class="col-6 mb-3">
                             <label for="yearFilter" class="form-label">Aastad</label>
                             <div class="d-flex align-items-center">
-                                <input type="number" class="form-control me-2" id="yearStart" placeholder="" min="1900">
-                                <p class="mb-0 mx-2">-</p>
-                                <input type="number" class="form-control" id="yearEnd" placeholder="" min="2024">
+                                <input  style="border-color: #264E3A;" type="text" class="form-control me-2" id="yearStart" placeholder="" maxlength="4" pattern="\d{4}">
+                                <p style="color:#264E3A;" class="mb-0 mx-2">-</p>
+                                <input  style="border-color: #264E3A;" type="text" class="form-control" id="yearEnd" placeholder="" maxlength="4" pattern="\d{4}">
                             </div>
                         </div>
                     </div>
@@ -155,10 +155,10 @@
                     <span aria-hidden="true">&laquo;</span>
                 </a>
             </li>
-            <li class="page-item active"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item active"><a class="page-link" href="#" onclick="setActive(this, 1)">1</a></li>
+            <li class="page-item"><a class="page-link" href="#" onclick="setActive(this, 2)">2</a></li>
+            <li class="page-item"><a class="page-link" href="#" onclick="setActive(this, 3)">3</a></li>
+            <li class="page-item"><a class="page-link" href="#" onclick="setActive(this, 4)">4</a></li>
             <li class="page-item">
                 <a class="page-link" href="#" aria-label="Next">
                     <span aria-hidden="true">&raquo;</span>
@@ -196,6 +196,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
         integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
         crossorigin="anonymous"></script>
+    <script>
+    function setActive(element, page) {
+        const allItems = document.querySelectorAll('.pagination .page-item');
+        allItems.forEach(item => item.classList.remove('active'));
+        element.parentElement.classList.add('active');
+        console.log("User clicked on page " + page);
+    }
+    </script>
 </body>
 
 </html>
